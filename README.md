@@ -1,18 +1,33 @@
-# tot_task
+## Overview  
+This is a small Flutter e-commerce app with a cart system. It focuses on clean architecture, SOLID principles, and good OOP practices.  
 
-A new Flutter project.
+## Features  
+- Add or remove products from the cart  
+- Show total price of cart items  
+- Apply promo code discounts  
+- Home and Cart pages 
+- Local banners and product categories  
+- Responsive layout with shimmer loading placeholders  
+- Light and dark mode support  
+- Unit tests for the cart repository  
 
-## Getting Started
+## API Endpoints Used  
+- **Products**: https://fakestoreapi.com/products  
+- **Categories**: https://fakestoreapi.com/products/categories  
 
-flutter pub run build_runner build --delete-conflicting-outputs
+## Project Structure  
+- **lib/core/** → Common logic (DI, helpers, networking, router, theme, widgets)  
+- **lib/features/** → Feature modules (cart, home)  
+- **assets/** → Images files  
+- **test/** → Unit tests (cart)  
 
-This project is a starting point for a Flutter application.
+## State Management  
+The app uses **Cubit** from the `flutter_bloc` package for handling state.  
 
-A few resources to get you started if this is your first Flutter project:
+## Theming  
+Light and dark themes are implemented with Flutter’s theming system.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Design Choices  
+- Applied SOLID principles and OOP best practices for cleaner, maintainable code  
+- Dependency injection is used for repositories and services  
+- Features and shared logic are clearly separated for scalability  
